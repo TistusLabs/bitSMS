@@ -1,0 +1,21 @@
+{
+  "name": "projectx",
+  "homepage": "https://github.com/TistusLabs/projectx",
+  "authors": [
+    "shehantissera <shehan@duosoftware.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^1.0.6",
+    "angular": "^1.6.5"
+  }
+}
