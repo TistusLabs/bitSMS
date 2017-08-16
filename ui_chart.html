@@ -184,7 +184,7 @@
         <!-- / link and dropdown -->
 
         <!-- search form -->
-        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search" >
           <div class="form-group">
             <div class="input-group">
               <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search projects...">
@@ -662,7 +662,7 @@
   <h1 class="m-n font-thin h3">Beauty Your Data</h1>
 </div>
 <div class="wrapper-md">
-  <div ng-controller="FlotChartDemoCtrl">
+  <div >
     <div class="row">
       <div class="col-md-6">
         <div class="panel panel-default">

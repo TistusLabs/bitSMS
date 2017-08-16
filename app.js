@@ -1,21 +1,18 @@
 var app = angular.module('projectx', [
-	'ui.router'
+    'ui.router'
 ]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
 
-        .state('login', {
-            url: '/login',
-            templateUrl: 'content/home/home.html'
+        .state('home', {
+            url: '/home',
+            templateUrl: 'index.html'
         });
 
 }
-
-
-
 
 );

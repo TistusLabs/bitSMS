@@ -184,7 +184,7 @@
         <!-- / link and dropdown -->
 
         <!-- search form -->
-        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search" >
           <div class="form-group">
             <div class="input-group">
               <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search projects...">
@@ -664,7 +664,7 @@
   ">
   <!-- main -->
   <div class="col">
-    <div class="bg-black dker wrapper-lg" ng-controller="FlotChartDemoCtrl">
+    <div class="bg-black dker wrapper-lg" >
         <ul class="nav nav-pills nav-xxs nav-rounded m-b-lg">
           <li class="active"><a href>Day</a></li>
           <li><a href ng-click="refreshData()">Week</a></li>
