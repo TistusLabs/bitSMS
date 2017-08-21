@@ -1,0 +1,76 @@
+[
+    {
+        "name": "mm-dashboard",
+        "displayName": "Dashboard",
+        "category": "Navigation",
+        "icon": "glyphicon-stats",
+        "path": "dashboard",
+        "noOfNotifications": 5,
+        "subMenuItems": []
+    },
+    {
+        "name": "mm-user",
+        "displayName": "Customer",
+        "category": "Navigation",
+        "icon": "glyphicon-user",
+        "path": "",
+        "noOfNotifications": 5,
+        "subMenuItems": [
+            {
+                "name": "dashboardv1",
+                "displayName": "Application One",
+                "path": "appone",
+                "icon": "",
+                "noOfNotifications": 2
+            },
+            {
+                "name": "dashboardv2",
+                "displayName": "Application Two",
+                "path": "apptwo",
+                "icon": "",
+                "noOfNotifications": 0
+            }
+        ]
+    },
+    {
+        "name": "",
+        "displayName": "Subscriber",
+        "category": "Reports",
+        "icon": "glyphicon-file",
+        "path": "other",
+        "noOfNotifications": 0,
+        "subMenuItems": [
+            {
+                "name": "report1",
+                "displayName": "Daily Revenue",
+                "path": "daily",
+                "icon": "",
+                "noOfNotifications": 0
+            },
+            {
+                "name": "report1",
+                "displayName": "Activations",
+                "path": "daily",
+                "icon": "",
+                "noOfNotifications": 0
+            }
+        ]
+    },
+    {
+        "name": "",
+        "displayName": "Account",
+        "category": "Reports",
+        "icon": "glyphicon-file",
+        "path": "other",
+        "noOfNotifications": 0,
+        "subMenuItems": [
+            {
+                "name": "report1",
+                "displayName": "Daily Activations",
+                "path": "daily",
+                "icon": "",
+                "noOfNotifications": 0
+            }
+        ]
+    }
+]
