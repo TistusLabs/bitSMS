@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserManagement.Authentication</name>
+    </assembly>
+    <members>
+        <member name="T:UserManagement.Authentication.IAccess">
+            <summary>
+            This interface will be used to handle all authentication related operations
+            </summary>
+        </member>
+        <member name="M:UserManagement.Authentication.IAccess.Login(System.String,System.String)">
+            <summary>
+            Method to create security token and logged into the system
+            </summary>
+            <param name="UserName">User specific id</param>
+            <param name="Password">User specific password</param>
+            <param name="CompanyId">User related company id</param>
+            <returns>This will return data filled LoginResponse contract and Error object will have details in case of an error</returns>
+        </member>
+        <member name="M:UserManagement.Authentication.IAccess.SignUpSimple(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Method to create a new user in the system
+            </summary>
+            <param name="UserName">User specific id</param>
+            <param name="Password">User specific password</param>
+            <param name="ProfileType">Type of the profile (System, Vendor)</param>
+            <param name="FirstName">Calling name for the user</param>
+            <param name="Email">Email address for the user</param>
+            <param name="MobileNo">Contact mobile number for the user</param>
+            <returns>This will create a new user and return CommonResponse struct with ProfileID and UserID</returns>
+        </member>
+        <member name="M:UserManagement.Authentication.IAccess.Logout(System.String)">
+            <summary>
+            Method to logged out a user from the system
+            </summary>
+            <param name="SecurityToken">Secured user token</param>
+            <returns>This will delete user session and return CommonResponse struct</returns>
+        </member>
+    </members>
+</doc>
