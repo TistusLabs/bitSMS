@@ -1,4 +1,4 @@
-var app = angular.module('projectx', [
+var app = angular.module('bitsms', [
     'ui.router',
     'angular.filter'
 ]);

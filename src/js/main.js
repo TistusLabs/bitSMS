@@ -12,7 +12,7 @@ angular.module('app')
 
       // config
       $scope.app = {
-        name: 'ProjectX',
+        name: 'BitSMS',
         version: '2.2.0',
         // for chart colors
         color: {
