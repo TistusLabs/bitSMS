@@ -23,11 +23,10 @@ app.controller('MainController', ['$scope', '$rootScope', '$state', '$timeout', 
 function mainController($scope, $rootScope, $state, $timeout, $http) {
     console.log("login Application started");
 
-    $scope.loginUser = function () {
+    $scope.loginUser = function (username,password) {
         var userDetails = {
-            "UserName" : "nuwank",
-            "Password" : "nuwank",
-            "CompanyId":"1"
+            "UserName" : username,
+            "Password" : password
         }
         $http({
             method: "POST",
