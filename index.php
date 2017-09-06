@@ -1,3 +1,7 @@
+<?php
+require_once ("include/config.php"); require_once ("include/authenticity.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="" ng-app="bitsms">
 
@@ -274,7 +278,7 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a ui-sref="access.signin">Logout</a>
+                <a href ng-click="logoutSession()">Logout</a>
               </li>
             </ul>
             <!-- / dropdown -->
@@ -450,6 +454,7 @@
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/controllers/uiKernal.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="js/controllers/main.controller.js"></script>
 

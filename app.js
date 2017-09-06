@@ -1,6 +1,7 @@
 var app = angular.module('bitsms', [
     'ui.router',
-    'angular.filter'
+    'angular.filter',
+    'uiKernel'
 ]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {

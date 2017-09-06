@@ -1,3 +1,7 @@
+<?php
+require_once ("../include/config.php"); require_once ("../include/authenticity.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="" ng-app="loginapp">
 
@@ -36,6 +40,7 @@
     <script src="../js/ui-client.js"></script>
     <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="../js/controllers/uiKernal.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="controllers/signin.controller.js"></script>
 

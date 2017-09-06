@@ -1,6 +1,6 @@
-app.controller('MainController', ['$scope', '$rootScope', '$state', '$timeout', '$http', '$state', mainController]);
+app.controller('MainController', ['$scope', '$rootScope', '$state', '$timeout', '$http', '$state', '$helpers', '$systemUrls', mainController]);
 
-function mainController($scope, $rootScope, $state, $timeout, $http, $state) {
+function mainController($scope, $rootScope, $state, $timeout, $http, $state, $helpers, $systemUrls) {
     console.log("Application started");
 
     $scope.currentYear = new Date();
@@ -30,5 +30,30 @@ function mainController($scope, $rootScope, $state, $timeout, $http, $state) {
         console.log("Navigating to URL: ", location);
         $state.go(location);
         $state.transitionTo(location);
+    };
+
+    $scope.logoutSession = function () {
+        debugger
+        var payload = $helpers.getCookie("securityToken");
+        $http({
+            method: "POST",
+            url: $systemUrls.svc_access + "/UserService/Access.svc/Logout",
+            dataType: 'json',
+            data: '"'+payload+'"',
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(function (response, status) {
+            debugger
+            if (response.data.Response) {
+                $helpers.removeCookie("securityToken");
+                window.location.href = "auth/";
+            } else if (response.data.Error != null) {
+                alert("There was an error: " + response.data.Error.ErrorMessage);
+            }
+            console.log(response, status);
+        }, function (response, status) {
+            console.log(response, status);
+        });
     };
 }
