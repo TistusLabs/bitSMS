@@ -457,6 +457,7 @@ require_once ("include/config.php"); require_once ("include/authenticity.php");
     <script type="text/javascript" src="js/controllers/uiKernal.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="js/controllers/main.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/user-creation.js"></script>
 
 </body>
 

@@ -10,6 +10,23 @@
     },
     {
         "name": "mm-user",
+        "displayName": "Administration",
+        "category": "Navigation",
+        "icon": "glyphicon-user",
+        "path": "",
+        "noOfNotifications": 0,
+        "subMenuItems": [
+            {
+                "name": "useradministration",
+                "displayName": "User Creation",
+                "path": "usercreation",
+                "icon": "",
+                "noOfNotifications": 0
+            }
+        ]
+    },
+    {
+        "name": "mm-user",
         "displayName": "Customer",
         "category": "Navigation",
         "icon": "glyphicon-user",

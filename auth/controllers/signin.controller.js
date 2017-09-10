@@ -28,6 +28,7 @@ function signinController($scope, $rootScope, $state, $timeout, $http, $systemUr
             debugger
             if(response.data.SecurityToken != null){
                 $helpers.setCookie("securityToken", response.data.SecurityToken, 1);
+                $helpers.setCookie("SessionKey", response.data.SessionKey, 1);
                 window.location.href ="../";
             }else if(response.data.Error != null){
                 alert("There was an error: "+response.data.Error.ErrorMessage);

@@ -19,6 +19,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }).state('apptwo', {
             url: '/apptwo',
             templateUrl: 'partials/sample-app-two.html'
+        }).state('usercreation', {
+            url: '/usercreation',
+            controller:'UserAdministration',
+            templateUrl: 'partials/user-creation.html'
         });
 
 }
