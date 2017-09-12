@@ -35,8 +35,8 @@ function mainController($scope, $rootScope, $state, $timeout, $http, $state, $he
     $scope.logoutSession = function () {
         debugger
         var payload = {};
-        payload.SecurityToken = '"' + $helpers.getCookie("securityToken") + '"';
-        payload.SessionKey = '"' + $helpers.getCookie("SessionKey") + '"';
+        payload.SecurityToken = $helpers.getCookie("securityToken");
+        payload.SessionKey = $helpers.getCookie("SessionKey");
         $http({
             method: "POST",
             url: $systemUrls.svc_access + "/UserService/Access.svc/Logout",
